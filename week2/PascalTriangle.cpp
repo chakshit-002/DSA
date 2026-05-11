@@ -41,6 +41,7 @@ int main()
     cout << "ENter the value of n " << endl;
     cin >> n;
 
+    // nCr = n! / (r! * (n-r)!)
     for (int i = 1; i <= n; i++)
     {
         int count = 1;
