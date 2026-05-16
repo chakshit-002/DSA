@@ -28,6 +28,7 @@ int main() {
    cout<<"capacity of arr "<<arr.capacity()<<endl;
   cout<<"size of arr "<<arr.size()<<endl;
 
+
   vector<int>brr(4);
     brr.push_back(1);
   brr.push_back(10);
@@ -73,7 +74,29 @@ for(int i =0; i<drr.size(); i++){
   cout<<"size of drr "<<drr.size()<<endl;
 
 
+int n ;
+  // bad  way 
+  // vector<int>  err(n);
+  // cin>>n; 
+  //good way 
+  cin>>n; 
+  vector<int>  err(n);
+  cout<<"capacity of err "<< err.capacity()<<endl;
+  cout<<"size of err "<<err.size()<< endl;
+  for(int i =0; i<err.size(); i++){
+    cin>>err[i];
+  }
+
+  for(int i=0; i<err.size(); i++){
+    cout<<err[i]<<" ";
+  }
+  cout<<endl;
   
+  vector <int>frr(n,2);
+  for(int i =0; i<frr.size(); i++){
+    cout<<frr[i]<<" ";
+  }
+  cout<<endl;
   return 0;
 
 
